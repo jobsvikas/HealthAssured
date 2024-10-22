@@ -58,7 +58,7 @@ namespace PricingTest.Models
             sut.GetPrice();
 
             //Assert
-            var a = A.CallTo(() => pricingStrategyMock.GetTotal(A<OrderItem>.Ignored)).MustHaveHappenedOnceExactly();
+            A.CallTo(() => pricingStrategyMock.GetTotal(A<OrderItem>.Ignored)).MustHaveHappenedOnceExactly();
         }
 
         [Theory]
